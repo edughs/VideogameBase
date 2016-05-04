@@ -1,0 +1,169 @@
+/* autor: edughs */
+
+@import "reset.css";
+
+html, body {
+}
+
+.ui-content {
+        background-size:16px 16px;
+        color: #fff;
+}
+ul.principal {
+    list-style-type: none;
+    background:url("../img/space-invaders-wallpaper.jpg")  no-repeat;
+    border-radius: 5px;
+}
+
+ul.principal li {
+    height: 100px;
+    width: 80%;
+    background-color: #F3FC04;
+    border-radius: 12px 12px 12px 12px;
+    -moz-border-radius: 12px 12px 12px 12px;
+    -webkit-border-radius: 12px 12px 12px 12px;
+    border: 2px solid #c7c3c7;
+    margin: 15px auto;
+    padding: 5px 20px;
+    -webkit-box-shadow: 0px 11px 18px -16px rgba(217,214,217,1);
+    -moz-box-shadow: 0px 11px 18px -16px rgba(217,214,217,1);
+    box-shadow: 0px 11px 18px -16px rgba(217,214,217,1);
+}
+.icon {
+        width: 120px;
+        height: 90px;
+        vertical-align: middle;
+        padding-right: 30px;
+}
+ul.principal li a {
+    text-decoration: none;
+    font-size: 2em;
+    color: #000;
+}
+/*ul.principal li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #000;
+}*/
+
+#contenidoPersonajes, #contenidoJuegos, #contenidoFranquicias, #contenidoCompanias  {
+    background-color: rgba(255, 255, 255, 0.1);
+    /*width: 90%;*/
+    margin: 3px auto;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#contenidoPersonajes table, #contenidoJuegos table, #contenidoFranquicias  table, #contenidoCompanias  table{
+    margin: 10px auto;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+#contenidoPersonajes table tr, #contenidoJuegos table tr, #contenidoFranquicias table tr, #contenidoCompanias table tr {
+
+    border-bottom: 1px solid #ccc;
+    font-size: 0.8em;
+}
+#contenidoPersonajes table tr td, #contenidoJuegos table tr td, #contenidoFranquicias  table tr td, #contenidoCompanias  table tr td{
+    padding: 4px 3px;
+}
+#popupPersonajes, #popupJuegos, #popupFranquicias, #popupCompanias{    
+    width: 500px;
+    height: auto;
+    background-color: #E94A4A;
+    overflow: hidden;
+}
+#popupPersonajes img, #popupJuegos img, #popupFranquicias img, #popupCompanias img{
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+body{
+    width: 100%;
+}
+#main{
+    width: 100%;
+}
+#titulo_app{
+    width: 100%;
+}
+#titulo_app img{
+    margin-left:30%;
+}
+#busqueda{
+    width: 80%;
+
+}
+#busqueda li{
+    width: 80%;
+    
+}
+#buscar{
+    width: 20%;
+    padding: 5px;
+    background-color: grey;
+    border-radius: 5px;
+}
+/*.img_juego img*/
+.caja_resul img{
+    max-width: 150px;
+    max-height: 250px;
+}
+
+.caja_resul{
+    height: 300px;
+    background-color: #635F5F;
+    border: solid black 1px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.caja_resul p{
+    float: right;
+}
+#contenidoBusqueda{
+    margin-left: 5px;
+    overflow: hidden;
+}
+
+#vistaPersonaje, #vistaJuego, #vistaFranquicia, #vistaCompania {
+    height: auto;
+    background-color: green;
+    border-radius: 5px;
+}
+#vistaPersonaje img, #vistaJuego img, #vistaFranquicia img, #vistaCompania img{
+    max-width: 150px;
+    max-height: 250px;
+}
+
+.cargando{
+    width: 200px;
+    height: auto;
+    background-color: purple;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.tres_columnas{
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+
+    -webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1px; /* Firefox */
+    column-rule-width: 1px;
+
+    -webkit-column-rule-color: lightblue; /* Chrome, Safari, Opera */
+    -moz-column-rule-color: lightblue; /* Firefox */
+    column-rule-color: lightblue;
+}

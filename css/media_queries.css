@@ -1,0 +1,81 @@
+/* autor: edughs */
+
+/*------MEDIA QUERIES-------*/
+
+/*------ESCRITORIOS-------*/
+@media screen and (max-width: 800px) {
+	ul.principal li {
+        height: 80px;
+        width: 80%;
+        margin: 15px auto;
+        padding: 5px 20px;
+        background-color: blue;
+    }
+    .icon {
+        width: 100px;
+        height: 70px;
+        vertical-align: middle;
+        padding-right: 30px;
+    }
+    #titulo_app img{
+        margin-left:15%;
+    }
+
+}
+/*------TABLETS-------*/
+@media only screen and (max-width : 600px) {
+	ul.principal li{
+		width:70%;
+		background-color: red;
+	}
+    ul.principal li a {
+        font-size: 1.5em;
+    }
+	.icon {
+        width: 70px;
+        height: 70px;
+        vertical-align: middle;
+        padding-right: 10px;
+
+    }
+    #titulo_app img{
+        width: 100%;
+        margin-left:0;
+    }
+
+}
+/*------SMARTPHONES-------*/
+@media only screen and (max-width : 480px) {
+	ul.principal li {
+        height: 70px;
+        width: 100%;
+        margin: 15px auto;
+        padding: 5px;
+        background-color: green;
+    }
+
+    .icon {
+        width: 55px;
+        height: 55px;
+        vertical-align: middle;
+        padding-right: 10px;
+
+    }
+}
+
+
+@media screen and (orientation: portrait) {
+    .contenido {
+        height: 100%;        
+        
+    }
+
+}
+@media screen and (orientation: landscape) {
+    ul.principal {
+	    list-style-type: none;
+	    background:url("../img/tetris_fondo.jpg")  no-repeat;
+	    background-size: 100% 100%;
+	}
+}
+

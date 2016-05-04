@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--autor: edughs-->
+<html manifest="cache.manifest">
+    <head>
+        <meta charset='utf-8'  />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <title>VIDEOJUEGOS</title>        
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/game.css" />
+        <link rel="stylesheet" href="css/media_queries.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/media_queries.css" />
+        <script>
+          window.paceOptions = {
+              restartOnRequestAfter: true
+              ajax: {
+                  trackMethods: ['GET', 'POST', 'PUT', 'DELETE', 'REMOVE']
+              }
+          };
+        </script>
+        <script src="pace/pace.js"></script>
+        <link rel="stylesheet" href="pace/themes/orange/pace-theme-center-circle.css"/>     
+        
+    </head>
+    <body>
+      <div data-role="page" id="main" data-title="Videojuegos" data-theme="b" >
+        <div data-role="header" id="titulo_app">
+          <img src="img/logo-app.jpg" alt="logo" class="centrado ">
+        </div>
+        <div data-role="content">        
+            <input id="busqueda"  type="search" placeholder="Introduzca su búsqueda :">
+            <a href="#divBusqueda" id ="buscar">Buscar</a>            
+            <ul class="principal" id="principal">
+              <li><a href="#divPersonajes"  data-transition="slide"><img class="icon" src="img/ryu.png"/>PERSONAJES</a></li>
+              <li><a href="#divJuegos"><img class="icon" src="img/cartucho_nes.jpg"/>JUEGOS</a></li>
+              <li><a href="#divFranquicias"><img class="icon" src="img/zelda-logo.png" />FRANQUICIAS</a></li>
+              <li><a href="#divCompanias"><img class="icon" src="img/ubisoft-logo.jpg" />COMPAÑIAS</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" data-id="menuPie" data-position="fixed">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#divPersonajes" data-transition="slide">Personajes</a></li>
+              <li><a href="#divJuegos">Juegos</a></li>
+              <li><a href="#divFranquicias">Franquicias</a></li>
+              <li><a href="#divCompanias">Compañias</a></li>
+              <li><a href="#divBusqueda">Busqueda</a></li>
+            </ul>
+          </div>
+        </div>   
+      </div>
+
+      <!--**************************** PERSONAJES ********************************* -->
+      <div data-role="page" id="divPersonajes" class="ui-page" data-title="Personajes" data-theme="b">
+        <div data-role="header"><a href="#main" data-direction="reverse" data-transition="slide" data-theme="a" >Volver</a><h1>Lista de Personajes</h1></div>
+        <div class="cargando">Cargando...</div>
+        <div data-role="content">          
+          <div id="contenidoPersonajes" class="col-xs-12">     
+          </div>              
+          <div data-role="popup" id="popupPersonajes" class="col-xs-9 col-sm-6">            
+          </div>
+        </div>
+        <div data-role="footer" data-id="menuPie" data-position="fixed">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#divPersonajes" class="ui-btn-active ui-state-persist" id="navPilotos">Personajes</a></li>
+              <li><a href="#divJuegos">Juegos</a></li>
+              <li><a href="#divFranquicias">Franquicias</a></li>
+              <li><a href="#divCompanias">Compañias</a></li>
+              <li><a href="#divBusqueda">Busqueda</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--*************************** JUEGOS ********************************* -->
+      <div data-role="page" id="divJuegos" class="ui-page" data-title="Juegos" data-theme="b">
+        <div data-role="header">
+          <a href="#main" data-direction="reverse" data-transition="slide" data-theme="a" >Volver</a>
+          <h1>Lista de Juegos</h1>
+        </div>
+        <div class="cargando">Cargando...</div>
+        <div data-role="content">
+          <div id="contenidoJuegos" class="col-xs-12">              
+          </div>  
+          <div data-role="popup" id="popupJuegos" class="col-xs-10 col-sm-6">            
+          </div>              
+        </div>
+        <div data-role="footer" data-id="menuPie" data-position="fixed">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#divPersonajes" data-transition="slide">Personajes</a></li>
+              <li><a href="#divJuegos" class="ui-btn-active ui-state-persist">Juegos</a></li>
+              <li><a href="#divFranquicias">Franquicias</a></li>
+              <li><a href="#divCompanias">Compañias</a></li>
+              <li><a href="#divBusqueda">Busqueda</a></li>
+            </ul>
+          </div>
+        </div>   
+      </div>
+      <!--*************************** FRANQUICIAS ********************************* -->
+      <div data-role="page" id="divFranquicias" class="ui-page" data-title="Franquicias" data-theme="b">
+        <div data-role="header">
+          <a href="#main" data-direction="reverse" data-transition="slide" data-theme="a" >Volver</a>
+          <h1>Lista de Franquicias</h1>
+        </div>
+        <div class="cargando">Cargando...</div>
+        <div data-role="content">
+          <div id="contenidoFranquicias" class="col-xs-12">        
+          </div>
+          <div data-role="popup" id="popupFranquicias" class="col-xs-10 col-sm-6">            
+          </div>      
+        </div>
+        <div data-role="footer" data-id="menuPie" data-position="fixed">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#divPersonajes" data-transition="slide">Personajes</a></li>
+              <li><a href="#divJuegos">Juegos</a></li>
+              <li><a href="#divFranquicias" class="ui-btn-active ui-state-persist">Franquicias</a></li>
+              <li><a href="#divCompanias">Compañias</a></li>
+              <li><a href="#divBusqueda">Busqueda</a></li>
+            </ul>
+          </div>
+        </div>   
+      </div>
+      <!--*************************** COMPAÑIAS ********************************* -->
+      <div data-role="page" id="divCompanias" class="ui-page" data-title="Companias" data-theme="b">
+        <div data-role="header">
+          <a href="#main" data-direction="reverse" data-transition="slide" data-theme="a" >Volver</a>
+          <h1>Lista de Compañias</h1>
+        </div>
+        <div class="cargando">Cargando...</div>
+        <div data-role="content">
+          <div id="contenidoCompanias" class="col-xs-12">          
+          </div>
+          <div data-role="popup" id="popupCompanias" class="col-xs-10 col-sm-6">            
+          </div>       
+        </div>
+        <div data-role="footer" data-id="menuPie" data-position="fixed">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#divPersonajes" data-transition="slide">Personajes</a></li>
+              <li><a href="#divJuegos">Juegos</a></li>
+              <li><a href="#divFranquicias" >Franquicias</a></li>
+              <li><a href="#divCompanias" class="ui-btn-active ui-state-persist">Compañias</a></li>
+              <li><a href="#divBusqueda">Busqueda</a></li>
+            </ul>
+          </div>
+        </div>   
+      </div>
+
+      <!--********************BÚSQUEDA******************************-->
+      <div data-role="page" id="divBusqueda" class="ui-page" data-title="Busqueda" data-theme="b">
+        <div data-role="header">
+          <a href="#main" data-direction="reverse" data-transition="slide" data-theme="a" >Volver</a>
+          <h1>Resultados</h1>
+        </div>
+        <div class="cargando">Cargando...</div>
+        <div data-role="content">
+          <div id="contenidoBusqueda">
+          </div>          
+        </div>
+        <div data-role="footer" data-id="menuPie" data-position="fixed">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#divPersonajes" data-transition="slide">Personajes</a></li>
+              <li><a href="#divJuegos">Juegos</a></li>
+              <li><a href="#divFranquicias" >Franquicias</a></li>
+              <li><a href="#divCompanias">Compañias</a></li>
+              <li><a href="#divBusqueda" class="ui-btn-active ui-state-persist">Busqueda</a></li>
+            </ul>
+          </div>
+        </div>   
+      </div>   
+
+        
+      <!--<section id="contenido"></section>-->
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+
+    <script src="js/bootstrap.js"></script>  
+
+    <script src="js/funciones.js"></script>
+
+    <script src="js/eventos.js"></script>
+  
+
+    </body>
+</html>

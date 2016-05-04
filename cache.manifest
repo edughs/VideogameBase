@@ -1,0 +1,25 @@
+CACHE MANIFEST
+#version 0.1
+CACHE:
+index.html
+js/jquery-1.11.1.min.js
+js/jquery.mobile-1.4.5.min.js
+js/bootstrap.js
+js/funciones.js
+js/eventos.js
+css/jquery.mobile-1.4.5.min.css
+css/bootstrap.css
+css/game.css
+css/media_queries.css
+pace/pace.js
+pace/themes/orange/pace-theme-center-circle.css
+img/logo-app.jpg
+img/ryu.png
+img/cartucho_nes.jpg
+img/zelda-logo.png
+img/ubisoft-logo.jpg
+img/tetris_fondo.jpg
+img/space-invaders-wallpaper.jpg
+
+NETWORK:
+*
