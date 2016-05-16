@@ -20,5 +20,8 @@ ONLINE MODE
 OFFLINE MODE
 -Pages with characters list, games list, franchises list and companies list. But, it doesn’t show the pop-ups.
 
+![game_base_inicio](https://cloud.githubusercontent.com/assets/15845482/15305453/886b9140-1bc3-11e6-93c3-3f3b32ef09b6.png)
+![game_base_detail](https://cloud.githubusercontent.com/assets/15845482/15305457/8fe3fe30-1bc3-11e6-8b5b-837a36a614f4.png)
+
 
 
